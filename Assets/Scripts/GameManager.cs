@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public ParticleSystem particles;
     private AudioSource spawnAudio;
     public AudioClip spawnSound;
-
+    
     
 
     public bool isGameActive = false;
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
                 if (SceneManager.GetActiveScene().buildIndex == 3)
                 {
 
-                    SceneManager.LoadScene(0);
+                  SceneManager.LoadScene(0);
 
                 }
                 else
@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour
                 }
 
             }
+      
 
         
 
