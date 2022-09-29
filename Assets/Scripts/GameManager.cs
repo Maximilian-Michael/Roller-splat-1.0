@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager singleton;
     
+    
     public GroundPiece[] allGroundPieces;
 
     public ParticleSystem particles;
@@ -39,15 +40,15 @@ public class GameManager : MonoBehaviour
      public void Awake()
      {
 
-                if (singleton == null)
-                {
-                    singleton = this;
-                }
-                else if (singleton != this)
-                {
-                    Destroy(gameObject);
-                    DontDestroyOnLoad(gameObject);
-                }
+       if (singleton == null)
+       {
+         singleton = this;
+       }
+       else if (singleton != this)
+       {
+         Destroy(gameObject);
+         DontDestroyOnLoad(gameObject);
+       }
      }
         public void CheckComplete()
         {
